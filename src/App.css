@@ -119,3 +119,144 @@ p {
     transform: translateY(0) scale(1); 
   }
 }
+
+:root {
+  /* Alisher Navoiy mavzusi uchun oltin va quyuq ranglar */
+  --primary-color: #ff9f43; 
+  --secondary-color: #ee5253;
+  --bg-dark: #1e272e;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  /* Orqa fon uchun chiroyli gradient */
+  background: radial-gradient(circle at top right, #2c3e50, #000000);
+  height: 100vh;
+}
+
+.mobile-presentation {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/* Progress bar endi neon nurdek ko'rinadi */
+.progress-bar {
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 15px var(--primary-color);
+  z-index: 100;
+}
+
+/* NEODIMAY/NEOBICHNOY KARTA */
+.slide-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  /* Glassmorphism effekti */
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  
+  margin: 60px 0 30px 0;
+  padding: 40px 25px;
+  
+  /* Asimmetrik va qiziqarli shakl */
+  border-radius: 60px 15px 60px 15px; 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+  /* Pastki qismdagi neon chiziq */
+  border-bottom: 5px solid var(--primary-color);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size: 2rem;
+  background: linear-gradient(to bottom, #fff, var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+  margin: 20px 0;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #dfe6e9;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.page-number {
+  background: var(--primary-color);
+  color: #000;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* TUGMALAR */
+.mobile-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  flex: 1;
+  padding: 15px;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:active:not(:disabled) {
+  background: var(--primary-color);
+  color: #000;
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+.nav-btn:disabled {
+  border-color: #636e72;
+  color: #636e72;
+  opacity: 0.5;
+}
+
+/* ANIMATSIYA: Slayd aylanib kirib keladi */
+.animate-fade {
+  animation: neobichnoyIn 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes neobichnoyIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-5deg) scale(0.8) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1) translateY(0);
+  }
+}

@@ -3,16 +3,56 @@ import './App.css';
 import Slide from './components/Slide'; // Slide komponentini chaqiramiz
 
 const slides = [
-  { id: 1, title: "Ona tili — millat ko'zgusi", content: "Til yashasa, millat yashaydi. O'zbek tili bizning g'ururimiz!" },
-  { id: 2, title: "Tilning ahamiyati", content: "O'zbek tili boy va qadimiy tillardan biri hisoblanadi." },
-  { id: 3, title: "Alisher Navoiy", content: "Bobomiz Navoiy o'zbek adabiy tiliga asos solganlar." },
-  { id: 4, title: "Davlat tili", content: "1989-yil 21-oktabrda tilimizga Davlat tili maqomi berilgan." },
-  { id: 5, title: "Imlo qoidalari", content: "To'g'ri yozish har bir o'quvchining burchidir." },
-  { id: 6, title: "Nutq madaniyati", content: "Chiroyli so'zlash — insonning ko'rki." },
-  { id: 7, title: "Leksikologiya", content: "Tilning lug'at boyligini o'rganuvchi bo'lim." },
-  { id: 8, title: "Morfologiya", content: "So'z turkumlari haqidagi muhim fan." },
-  { id: 9, title: "Sintaksis", content: "Gaplar va so'z birikmalarini o'rganamiz." },
-  { id: 10, title: "Xulosa", content: "Ona tilimizni asrash va uni e'zozlash bizning vazifamiz!" }
+  { 
+    id: 1, 
+    title: "Alisher Navoiy — buyuk mutafakkir", 
+    content: "O'zbek adabiy tili asoschisi, davlat arbobi va nazira janri ustasi." 
+  },
+  { 
+    id: 2, 
+    title: "Tavallud va yoshlik", 
+    content: "1441-yil 9-fevralda Hirot shahrida tug'ilgan. Bolaligidanoq she'riyatga oshno bo'lgan." 
+  },
+  { 
+    id: 3, 
+    title: "Bilim yo'li", 
+    content: "Mashhad va Samarqandda tahsil olgan. Fors va turkiy tillarda ijod qilgan." 
+  },
+  { 
+    id: 4, 
+    title: "Sulton Husayn Boyqaro", 
+    content: "Bolalikdagi do'sti sulton bo'lgach, Navoiy davlat ishlarida faol qatnashgan." 
+  },
+  { 
+    id: 5, 
+    title: "Navoiy — muhrdor va vazir", 
+    content: "U xalq farovonligi uchun ko'plab madrasalar, shifoxonalar va ko'priklar qurdirgan." 
+  },
+  { 
+    id: 6, 
+    title: "Xamsa — durdona asar", 
+    content: "Beshta dostonni o'z ichiga olgan ulkan asar turkiy tilda birinchi bo'lib yozilgan." 
+  },
+  { 
+    id: 7, 
+    title: "Lison ut-tayr", 
+    content: "Navoiyning falsafiy asari bo'lib, insonning komillikka intilishi haqida hikoya qiladi." 
+  },
+  { 
+    id: 8, 
+    title: "Muhokamat ul-lug'atayn", 
+    content: "Turkiy tilning fors tilidan kam emasligini ilmiy isbotlab bergan asar." 
+  },
+  { 
+    id: 9, 
+    title: "Navoiy — g'azal mulkining sultoni", 
+    content: "U o'z g'azallarida sevgi, vafo va insoniy fazilatlarni ulug'lagan." 
+  },
+  { 
+    id: 10, 
+    title: "Xotira — mangulik", 
+    content: "Alisher Navoiy nomi o'zbek xalqi qalbida abadiy yashaydi. 1501-yil Hirotda vafot etgan." 
+  }
 ];
 
 function App() {
